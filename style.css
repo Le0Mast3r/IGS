@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Pacifico|Righteous|Roboto|Ubuntu&display=swap");
+
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.btn-outline-secondary {
+  background-color: transparent !important;
+  border-color: #504B43 !important;
+  color: #504B43 !important;
+  border-radius: 0;
+  position: relative;
+}
+.btn-outline-secondary:before {
+  content: "";
+  position: absolute;
+  background-color: #32be8f;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  z-index: -1;
+}
+.btn-outline-secondary:hover::before {
+  width: 100%;
+}
+.btn-secondary {
+  background-color: #504B43 !important;
+  border-radius: 0;
+  border-color: #504B43 !important;
+}
+.btn-secondary:hover {
+  color: #32be8f !important;
+}
+.btn-primary {
+  background-color: rgb(250, 250, 250) !important;
+  border-radius: 0;
+  border-color: #32be8f !important;
+  color: #504B43 !important;
+}
+.btn-primary:hover {
+  background-color: #504B43 !important;
+  color: #32be8f !important;
+}
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+}
+.nav-link,
+.navbar-brand {
+  color: #504B43;
+}
+.nav-link:hover,
+.navbar-brand:hover {
+  color: #32be8f;
+}
+.navbar-brand {
+  font-size: 1.4rem;
+}
+.call-to-action {
+  background-color:#f5f3f4;
+  color: #000;
+}
+.heading-line {
+  height: 3px;
+  width: 10%;
+  background-color:#32be8f;
+}
+.services i {
+  font-size: 2rem;
+  color: #32be8f;
+}
+
+@media (max-width: 900px) {
+  .navbar .nav-item {
+    display: block;
+    width: 100%;
+    padding: 10px 0px;
+    text-align: center;
+  }
+  .call-to-action .container {
+    width: 100% !important;
+  }
+}
